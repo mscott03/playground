@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquer</title>
+</head>
+<body>
+	<div id="page">
+		<input type="text" id="userInput" style="padding: 5px; width: 30%; border: 2px solid #333;" />
+
+
+		<h2 id="result"></h2>
+	</div>	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			
+			var userInput = $('#userInput');
+			
+			$('#userInput').on('keyup', function() {
+				$('#result').html(userInput.val());
+			});
+		});
+	</script>
+</body>
+</html>
